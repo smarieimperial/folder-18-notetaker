@@ -1,0 +1,19 @@
+$.ajax({
+    type: "POST",
+    dataType: "json",
+    url: "/submit",
+    data: {
+      title: $("#title").val(),
+      note: $("#note").val(),
+      created: Date.now()
+    }
+  })
+
+  // if we filled out this form and submitted it, then it would be similar to the above ajax query
+  // <form method="POST" action="/submit">
+  //   <input type="text" name="title">
+  //   <input type="text" name="note">
+  //   <input type="text" name="created">
+
+  //   <button>submit</button>
+  // </form>
